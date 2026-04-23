@@ -1,0 +1,6 @@
+This file exists to check if my code to encrypt and decrypt a file works. I found this to be much more challenging that it should have been and this is my 5th version of TestFile because I kept messing up by not including enough of the alphabet or punctuation. I also forgot to really include different character cases to ensure upper or lower case worked correctly. I wasn't sure the best way to do that so I'm including a few lines of code. The first will be all uppercase, followed by all lowercase, followed by alternating upper and lowercase (starting with a capital A). The last line will be a follow the following format: upper-upper-lower-lower-character-character and repeat until through the alphabet.
+
+ABCDEFGHIJKLMNOPQRSTUVWXYZ
+abcdefghijklmnopqrstuvwxyz
+AbCdEfGhIjKlMnOpQrStUvWxYz
+ABcd($EFgh:.IJkl@"MNop!,QRst+=UVwx\}YZ

@@ -1,0 +1,5 @@
+﻿  CorderGregoryAssignment5.cpp
+C:\Users\gregc\Documents\National Universtiy\Masters\CSC 242 Intro Into Programming\Assignments\CorderGregoryAssignment5\CorderGregoryAssignment5\CorderGregoryAssignment5.cpp(34,16): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\gregc\Documents\National Universtiy\Masters\CSC 242 Intro Into Programming\Assignments\CorderGregoryAssignment5\CorderGregoryAssignment5\CorderGregoryAssignment5.cpp(98,38): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\gregc\Documents\National Universtiy\Masters\CSC 242 Intro Into Programming\Assignments\CorderGregoryAssignment5\CorderGregoryAssignment5\CorderGregoryAssignment5.cpp(103,44): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+  CorderGregoryAssignment5.vcxproj -> C:\Users\gregc\Documents\National Universtiy\Masters\CSC 242 Intro Into Programming\Assignments\CorderGregoryAssignment5\CorderGregoryAssignment5\x64\Debug\CorderGregoryAssignment5.exe
