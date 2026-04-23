@@ -1,6 +1,6 @@
 /*
 This is assignment 5 for CSC 242 at National University
-This assignment is designed to encrypt or decrypt a file based on a keyword using monoalphabet cypher.
+This assignment is designed to encrypt or decrypt a file based on a keyword using monoalphabet cipher.
 This is Greg Corder's part of the final assignment with Thomas Deatherage
 */
 
@@ -25,17 +25,17 @@ string removeDuplicates(const string& keyword) //sets the keyword to a constant 
     return result;
 }
 
-//Greg Corder
-string buildcypherAlphabet(const string& keyword) //builds the cypher based on keyword
+//Greg Corder //Thomas Deatherage changed cypher to cipher
+string buildcypherAlphabet(const string& keyword) //builds the cipher based on keyword
 {
     string alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"; //references alphabet
-    string cypher = keyword;
+    string cipher = keyword;
 
     for (int i = alphabet.size() - 1; i >= 0; i--)  // reverses the alphabet 
     {
-        if (cypher.find(alphabet[i]) == string::npos) //adds letter if not in keyword
+        if (cipher.find(alphabet[i]) == string::npos) //adds letter if not in keyword
         {
-            cypher += alphabet[i];
+            cipher += alphabet[i];
         }
     }
     return cypher;
@@ -73,7 +73,7 @@ int main()
     keyword = removeDuplicates(keyword);
 
     string alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"; 
-    string cypherAlphabet = buildcypherAlphabet(keyword); //applies my keyword cypher function to to the alphabet
+    string cipherAlphabet = buildcypherAlphabet(keyword); //applies my keyword cipher function to to the alphabet
 
     ifstream inFile(fileIn); //inports file
     ofstream outFile(fileOut); //exports file
@@ -84,7 +84,7 @@ int main()
         return 1;
     }
 
-    char ch; //this whole section checks upper and lower case and replaces each character in the file with the cypher character
+    char ch; //this whole section checks upper and lower case and replaces each character in the file with the cipher character
     while (inFile.get(ch)) 
     {
         if (isalpha(ch)) //ignors punctuation
@@ -93,14 +93,14 @@ int main()
             char upperChar = toupper(ch);
 
             int index;
-            if (mode == 'e') //processes replacement with cypherAlphabet if encrypting
+            if (mode == 'e') //processes replacement with cipherAlphabet if encrypting
             {
                 index = alphabet.find(upperChar);
-                ch = cypherAlphabet[index];
+                ch = cipherAlphabet[index];
             }
             else if (mode == 'd') 
             {
-                index = cypherAlphabet.find(upperChar); //processes replacement with normal alphabet if decrypting
+                index = cipherAlphabet.find(upperChar); //processes replacement with normal alphabet if decrypting
                 ch = alphabet[index];
             }
 
